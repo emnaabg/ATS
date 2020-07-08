@@ -34,8 +34,8 @@ def allproducts(request):
 def oneproduct(request,id):
         
     p=production.objects.get(id=id) 
-        
-    context ={'productinfo':p}
+    r=review.objects.get(id=id)         
+    context ={'productinfo':p,'review':r}
 
         
     return render(request,'products/productinfo.html',context)

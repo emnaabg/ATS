@@ -9,7 +9,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>OPEN SOURCE COMMUNITY</title>
+	<title>ATS</title>
 
 	<!-- Global stylesheets -->   
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
@@ -66,39 +66,38 @@
 					<a href="#" class="navbar-nav-link dropdown-toggle caret-0" data-toggle="dropdown" onclick="markasread()">
 						<i class="icon-bubbles4"></i>
 						<span class="d-md-none ml-2">Notifications</span>
-						{%  ifequal nbrnotif 0 %}
-						<span class="badge badge-pill bg-warning-400 ml-auto ml-md-0" id="notific" style="display: none;">{{nbrnotif}}</span>
-						{% else %}
-						<span class="badge badge-pill bg-warning-400 ml-auto ml-md-0" id="notific" >{{nbrnotif}}</span>
-						{% endifequal %}
+						
+						
+						
+						<span class="badge badge-pill bg-warning-400 ml-auto ml-md-0" id="notific" ></span>
+						
 					</a>
 					
 					<div class="dropdown-menu dropdown-menu-right dropdown-content wmin-md-350">
 						<div class="dropdown-content-header">
-							<span class="font-weight-semibold">Notifications</span>
+							<span class="font-weight-semibold"></span>
 							<a href="#" class="text-default"><i class="icon-compose"></i></a>
 						</div>
 
 						<div class="dropdown-content-body dropdown-scrollable">
 							<ul class="media-list">
-								{% for notif in notifications %}
+								
 								<li class="media">
 									<div class="mr-3 position-relative">
-										<img src="{{notif.image}}" width="36" height="36" class="rounded-circle" alt="">
+										<img src="" width="36" height="36" class="rounded-circle" alt="">
 									</div>
 
 									<div class="media-body">
 										<div class="media-title">
 											<a href="">
-												<span class="font-weight-semibold">{{notif.username}}</span>
-												<span class="text-muted float-right font-size-sm">{{notif.date}}</span>
+												<span class="font-weight-semibold"></span>
+												<span class="text-muted float-right font-size-sm"></span>
 											</a>
 										</div>
 
-										<span class="text-muted">{{notif.content}}</span>
+										<span class="text-muted"></span>
 									</div>
 								</li>
-								{% endfor %}
 							</ul>
 						</div>
 
@@ -110,17 +109,11 @@
 
 				<li class="nav-item dropdown dropdown-user">
 					<a href="#" class="navbar-nav-link d-flex align-items-center dropdown-toggle" data-toggle="dropdown">
-						<img src="{{user.image}}" class="rounded-circle mr-2" height="34" alt="">
-						<span>{{user.username}}</span>
+						<img src="" class="rounded-circle mr-2" height="34" alt="">
+						<span></span>
 					</a>
 
-					<div class="dropdown-menu dropdown-menu-right">
-						<a href="" class="dropdown-item"><i class="icon-user-plus"></i> Mon profile</a>
-						<a href="#" class="dropdown-item"><i class="icon-coins"></i> Mes OSS </a>
-						<div class="dropdown-divider"></div>
-						<a href="#" class="dropdown-item"><i class="icon-cog5"></i> Account settings</a>
-						<a href="" class="dropdown-item"><i class="icon-switch2"></i> Logout</a>
-					</div>
+					
 				</li>
 			</ul>
 		</div>
@@ -156,7 +149,7 @@
 					<div class="card-body">
 						<div class="media justify-content-center">
 							
-								<img src="{% static '/images/logo.png' %}" style="width: 90%;margin-top: 20%;"> 
+								<img src="https://www.ats-digital.com/wp-content/themes/ats-digital-theme/theme/images/logos/Logo-T.png" style="width: 90%;margin-top: 20%;"> 
 						</div>
 					</div>
 				</div>
@@ -168,30 +161,8 @@
 					<ul class="nav nav-sidebar" data-nav-type="accordion">
 
 						<!-- Main -->
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu" title="Main"></i></li>
-						<li class="nav-item">
-							<a href="" class="nav-link ">
-								<i class="icon-home4"></i>
-								<span>
-									Accueil
-								</span>
-							</a>
-						</li>
-						<li class="nav-item ">
-							<a href="" class="nav-link "><i class="icon-user"></i> 
-								<span>Mon Profile</span></a>
-						</li>
-
-						<li class="nav-item ">
-							<a href="" class="nav-link active"><i class="icon-search4"></i> <span>Recherche des OSS</span></a>
-						</li>
-
-						<li class="nav-item ">
-							<a href="" class="nav-link"><i class="icon-people"></i> <span>Nos Développeurs</span></a>
-						</li>
-						<li class="nav-item ">
-							<a href="" class="nav-link"><i class="icon-users4"></i> <span>Notre communauté</span></a>
-						</li>
+					
+						
 
 					</ul>
 				</div>
@@ -211,7 +182,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Nos Logiciels</span> - OPEN SOURCE COMMUNITY</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Nos Produits</span> - ATS</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -235,8 +206,8 @@
 				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
 					<div class="d-flex">
 						<div class="breadcrumb">
-							<a href="" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Nos Logiciels</a>
-							<span class="breadcrumb-item active">OPEN SOURCE COMMUNITY</span>
+							<a href="" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Nos Produits</a>
+							<span class="breadcrumb-item active">ATS</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -284,7 +255,7 @@
                             <div class="card-footer d-sm-flex justify-content-sm-between align-items-sm-center">
                                 <span>
 									     
-										<i class="icon-star-full2" style="color:red;font-weight: 700;display: inline-block;">{{p.price}}</i>
+										<i class="icon-star-dollar" style="color:red;font-weight: 700;display: inline-block;">{{p.price}}</i>
 								                               
                                 </span>
 
@@ -295,11 +266,6 @@
                                     <li class="list-inline-item dropdown">
                                         <a href="#" class="text-default dropdown-toggle" data-toggle="dropdown"><i class="icon-menu7"></i></a>
 
-                                        <div class="dropdown-menu dropdown-menu-right">
-                                            <a href="{{log.url_git}}" class="dropdown-item"><i class="icon-github"></i> Github </a>
-                                            <a href="{{log.url_sf}}" class="dropdown-item"><i class="icon-circle-code"></i> Source Forge </a>
-                                            <a href="" class="dropdown-item"><i class="icon-user"></i> Developer profile</a>
-                                        </div>
                                     </li>
                                 </ul>
                             </div>
@@ -329,7 +295,7 @@
 
             <div class="navbar-collapse collapse" id="navbar-footer">
                 <span class="navbar-text">
-                    &copy; 2019 - 2020. <a href="#">PCD A.Emna AND M.Zoumorred</a> 
+                    &copy; 2019 - 2020. 
                 </span>
             </div>
         </div>
